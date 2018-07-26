@@ -27,13 +27,15 @@ background-color:#E8A4A1;
 								Description</b>: ${product.productdescription }<br> <b>Price
 						</b>: ${product.price }<br> <b>Quantity </b>:${product.quantity }
 							<security:authorize access="hasRole('ROLE_USER')">
-								<b>Enter Quantity</b>
-								<input type="number" name="quantity">
-								<button type="submit" value='Add To Cart'
-									class="btn btn-info btn-lg">
-									<span class="glyphicon glyphicon-shopping-cart"></span>Add
-									To Cart
-								</button>  
+								<!-- <b>Enter Quantity</b>
+								<input type="number" name="quantity"> -->
+								<a href="<c:url value='/cart/addtocart/${product.id}?requestedQuantity=1'></c:url>">
+									<button type="submit" value='Add To Cart'
+										class="btn btn-info btn-lg">
+										<span class="glyphicon glyphicon-shopping-cart"></span>Add
+										To Cart
+									</button>  
+								</a>
 							</security:authorize></td>
 						<td><img
 							src='<c:url value="/resources/images/${product.id }.png"></c:url>'

@@ -3,7 +3,7 @@
 <%@page isELIgnored="false"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
-<%@ taglib prefix="security" uri="http://www.springframework.org/security/tags"%>
+<%@ taglib uri="http://www.springframework.org/security/tags" prefix="security"%>
 <!DOCTYPE html > <!-- PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">  -->
 <html>
 <head>
@@ -47,7 +47,7 @@
 			 -->
 			<a class="navbar-brand" href=""><img
 				src='<c:url value="/resources/images/logo.png"></c:url>'
-				alt="Choose&Pick" height="30px" width="80px"></a>
+				alt="Click to Glow" height="30px" width="80px"></a>
 		</div>
 		
 		<div class="collapse navbar-collapse" id="collapse-example">

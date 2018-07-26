@@ -11,12 +11,16 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.project.model.Category;
 import com.project.model.Product;
+
 @Repository
 @Transactional
-public class ProductDaoImpl implements ProductDao {
+public class ProductDaoImpl implements ProductDao
+{
 	@Autowired
 	private SessionFactory sessionFactory;
-		public List<Product> getAllProducts() {
+	
+		public List<Product> getAllProducts()
+		{
 			Session session=sessionFactory.getCurrentSession();
 			String hqlString="from Product";//Product is name of the entity
 			//HQL - from Product
@@ -25,6 +29,7 @@ public class ProductDaoImpl implements ProductDao {
 			List<Product> products=query.list();
 			return products;
 		}
+		
 		public Product getProduct(int id)
 		{
 			Session session=sessionFactory.getCurrentSession();

@@ -26,16 +26,19 @@ import com.project.model.Product;
 import com.project.services.ProductService;
 
 @Controller
-public class ProductController {
+public class ProductController
+{
 	@Autowired
-private ProductService productService;
+	private ProductService productService;
+	
 	public ProductController(){
 		System.out.println("ProductController bean is created");
 	}
 	
 	//http://localhost:8080/project1frontend/all/getproducts 
 	@RequestMapping(value="/all/getproducts")
-	public ModelAndView getAllProducts(){
+	public ModelAndView getAllProducts()
+	{
 		List<Product> products=productService.getAllProducts();
 		//1st parameter - logical view name - productlist
 		//2nd parameter - model attribute name - refer it in jsp page

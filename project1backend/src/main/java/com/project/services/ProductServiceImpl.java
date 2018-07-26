@@ -16,9 +16,12 @@ public class ProductServiceImpl implements ProductService {
 	public ProductServiceImpl(){
 		System.out.println("ProductServiceImpl bean is Created");
 	}
-	public List<Product> getAllProducts() {
+	
+	public List<Product> getAllProducts()
+	{
 		return productDao.getAllProducts();
 	}
+	
 	public Product getProduct(int id) {	
 		//call dao 
 		return productDao.getProduct(id);

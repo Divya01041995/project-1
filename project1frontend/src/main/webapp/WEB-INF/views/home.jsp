@@ -51,7 +51,7 @@
                     <div class="container">
                         <div class="carousel-caption">
                             <h1>Hot Sale</h1>
-                            <p>It's Summer Time, So Get Ready For The Hottest Sale In The City!!!</p>
+                            <p> Get Ready For The Hottest Sale In The City!!!</p>
                         </div>
                     </div>
                 </div>

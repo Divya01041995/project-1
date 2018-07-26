@@ -79,7 +79,7 @@ p = 1 1000.0 Product Description for toy car Toy Car 12
  					             <button type="submit" value='Add To Cart' class="btn btn-link">
 								<span class="glyphicon glyphicon-shopping-cart"></span>
 								</button>
-								</security:authorize>
+						</security:authorize>
 						</a> 
 								
                     <security:authorize access="hasRole('ROLE_ADMIN')">			
@@ -88,7 +88,7 @@ p = 1 1000.0 Product Description for toy car Toy Car 12
 								class="glyphicon glyphicon-trash"></span></a>								
 						<a href='<c:url value="/admin/updateproductform/${p.id }"></c:url>'><span class="glyphicon glyphicon-pencil"></span></a>		
 						</td>
-		                 	</security:authorize>					
+		              </security:authorize>					
 						
 					</tr>
 				</c:forEach>

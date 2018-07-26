@@ -47,7 +47,8 @@ public class DBConfiguration {
 		 * <property name="dataSource" ref="dataSource">
 		 */
 		@Bean //SessionFactory - factory of session objects
-		public SessionFactory sessionFactory() {
+		public SessionFactory sessionFactory()
+		{
 			System.out.println("Entering sessionFactory creation method");
 			LocalSessionFactoryBuilder lsf=
 					new LocalSessionFactoryBuilder(getDataSource());
@@ -63,8 +64,10 @@ public class DBConfiguration {
 			System.out.println("Entering sessionFactory creation method");
 		    return lsf.addAnnotatedClasses(classes).buildSessionFactory();
 		}
+		
 		@Bean
-		public HibernateTransactionManager hibTransManagement(){
+		public HibernateTransactionManager hibTransManagement()
+		{
 			return new HibernateTransactionManager(sessionFactory());
 		}
 }
